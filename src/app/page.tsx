@@ -1,113 +1,121 @@
 import Image from "next/image";
+import Link from "next/link";
+import Button from "./components/Button";
+import Heading from "./components/Heading";
+import Logo from "./components/Logo";
+import PlusIcon from "./components/PlusIcon";
+import Card from "./components/Card";
+import LinkButton from "./components/LinkButton";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      {/*Hero*/}
+      <div className="w-full flex flex-col gap-[70px]">
+        {/*Nav*/}
+        <div className="w-full flex flex-row justify-between items-center">
+          <Logo />
+          <div className="w-fit flex flex-row gap-10 justify-center items-center">
+            <Link href="/" className="font-normal text-xl">About us</Link>
+            <Link href="/" className="font-normal text-xl">Services</Link>
+            <Link href="/" className="font-normal text-xl">Use Cases</Link>
+            <Link href="/" className="font-normal text-xl">Pricing</Link>
+            <Link href="/" className="font-normal text-xl">Blog</Link>
+            <Button property="secondary" href="/" label="Request a quote"/>
+          </div>
+        </div>
+        {/*Header*/}
+        <div className="w-full flex justify-between">
+          <div className="flex flex-col gap-[35px]">
+            <h1 className="w-[531px]">Navigating the digital landscape for success</h1>
+            <span className="w-[498px] font-normal text-xl">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</span>
+            <Button property="primary" href="/" label="Book a consultation"/>
+          </div>
+          <Image src="/hero.svg" width={600.46} height={515} alt="Hero" className="w-auto h-auto"/>
+        </div>
+        {/*Company Logo*/}
+        <div className="w-full flex justify-between">
+          <Link href="https://www.amazon.com/">
+            <Image src="/company_logo/amazon.svg" width={124.11} height={48} alt="Amazon" className="w-auto h-auto grayscale hover:grayscale-0"/>
+          </Link>
+          <Link href="https://dribbble.com/">
+            <Image src="/company_logo/dribble.svg" width={126.37} height={48} alt="Dribble" className="w-auto h-auto grayscale hover:grayscale-0"/>
+          </Link>
+          <Link href="https://www.hubspot.com/">
+            <Image src="/company_logo/hubspot.svg" width={128.63} height={48} alt="Hubspot" className="w-auto h-auto grayscale hover:grayscale-0"/>
+          </Link>
+          <Link href="https://www.notion.so/">
+            <Image src="/company_logo/notion.svg" width={145.55} height={48} alt="Notion" className="w-auto h-auto grayscale hover:grayscale-0"/>
+          </Link>
+          <Link href="https://www.netflix.com/">
+            <Image src="/company_logo/netflix.svg" width={125.24} height={48} alt="Netflix" className="w-auto h-auto grayscale hover:grayscale-0"/>
+          </Link>
+          <Link href="https://zoom.us/">
+            <Image src="/company_logo/zoom.svg" width={110.57} height={48} alt="Zoom" className="w-auto h-auto grayscale hover:grayscale-0"/>
+          </Link>
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      {/*Heading & Sub Heading - Services*/}
+      <div className="w-full flex flex-row gap-10 mt-[140px] mb-[80px]">
+        <Heading property="green" label="Services"/>
+        <p className="w-[580px] h-fit">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      {/*Service Cards*/}
+      <div className="w-full flex flex-col gap-10 items-center">
+        <div className="w-full flex flex-row gap-10">
+          <Card property={{card:"grey", label:"green"}} label="Search engine optimization" image="/card/tokyo-magnifier-web-search-with-elements.svg"/>
+          <Card property={{card:"green", label:"white"}} label="Pay-per-click advertising" image="/card/tokyo-selecting-a-value-in-the-browser-window.svg"/>
+        </div>
+        <div className="w-full flex flex-row gap-10">
+          <Card property={{card:"dark", label:"white"}} label="Social Media Marketing" image="/card/tokyo-browser-window-with-emoticon-likes-and-stars-around.svg"/>
+          <Card property={{card:"grey", label:"green"}} label="Email Marketing" image="/card/tokyo-sending-messages-from-one-place-to-another.svg"/>
+        </div>
+        <div className="w-full flex flex-row gap-10">
+          <Card property={{card:"green", label:"white"}} label="Content Creation" image="/card/tokyo-many-browser-windows-with-different-information.svg"/>
+          <Card property={{card:"dark", label:"green"}} label="Pay-per-click advertising" image="/card/tokyo-volumetric-analytics-of-different-types-in-web-browsers.svg"/>
+        </div>
       </div>
-    </main>
+      {/*CTA block*/}
+      <div className="w-full mt-[100px]">
+        <div className="w-[1240px] h-[347px] rounded-[45px] flex px-[60px] justify-between items-center bg-grey">
+          <div className="flex flex-col gap-[26px]">
+            <h3 className="w-[500px]">Let’s make things happen</h3>
+            <p className="w-[500px]">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
+            <Button property="primary" href="/" label="Get your free proposal"/>
+          </div>
+          <Image src="/cta.svg" width={359} height={394.27} alt="CTA" className="w-auto h-auto pr-[135px]"/>
+        </div>
+      </div>
+      {/*Heading & Sub Heading - Case Study*/}
+      <div className="w-full flex flex-row gap-10 mt-[140px] mb-[80px]">
+        <Heading property="green" label="Case Studies"/>
+        <p className="w-[580px] h-fit">Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
+      </div>
+      {/*Case Study block*/}
+      <div className="flex justify-center">
+        <div className="rounded-[45px] flex gap-16 px-[60px] py-[70px] bg-dark">
+          <div className="flex flex-col gap-5">
+            <p className="w-[286px] text-white">For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
+            <LinkButton property="simple green" href="/" label="Learn more"/>
+          </div>
+          <span className="w-px h-[186px] block bg-white"></span>
+          <div className="flex flex-col gap-5">
+            <p className="w-[286px] text-white">For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.</p>
+            <LinkButton property="simple green" href="/" label="Learn more"/>
+          </div>
+          <span className="w-px h-[186px] block bg-white"></span><div className="flex flex-col gap-5">
+            <p className="w-[286px] text-white">For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.</p>
+            <LinkButton property="simple green" href="/" label="Learn more"/>
+          </div>
+        </div>
+      </div>
+      {/*Heading & Sub Heading - Our Working Process*/}
+      <div className="w-full flex flex-row gap-10 mt-[140px] mb-[80px]">
+        <Heading property="green" label="Our Working Process"/>
+        <p className="w-[292px] h-fit">Step-by-Step Guide to Achieving Your Business Goals</p>
+      </div>
+      {/*Process block*/}
+      
+    </>
   );
 }
