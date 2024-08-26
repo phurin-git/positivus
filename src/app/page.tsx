@@ -115,7 +115,19 @@ export default function Home() {
         <p className="w-[292px] h-fit">Step-by-Step Guide to Achieving Your Business Goals</p>
       </div>
       {/*Process block*/}
-      
+      <div className="flex flex-col gap-[30px]">
+        <div className="w-[1234px] rounded-[45px] flex flex-col gap-[30px] px-[60px] py-[41px] border border-dark bg-green">
+          <div className="w-[1117px] flex justify-between items-center">
+            <div className="flex gap-[25px] items-center">
+              <h1>01</h1>
+              <h3 className="w-[612px]">Consultation</h3>
+            </div>
+            <PlusIcon property="minus"/>
+          </div>
+          <span className="w-[1114px] h-px bg-black block"></span>
+          <p className="w-[1114px] h-[60px]">During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+        </div>
+      </div>
     </>
   );
 }
