@@ -7,10 +7,11 @@ import Team from "./section/Team";
 import Testimonials from "./section/Testimonials";
 import Footer from "./section/Footer";
 import Contact from "./section/Contact";
-
+import Test from "./test"
 export default function Home() {
   return (
     <>
+      {false && <Test />}
       <Landing />
       <Services />
       <CTA />
