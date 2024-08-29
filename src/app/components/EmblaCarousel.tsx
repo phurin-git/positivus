@@ -24,7 +24,7 @@ const EmblaCarousel: React.FC = () => {
 
   return (
     <section className="pt-[70px] mt-[70px]">
-      <HeadingAndSubHeading HeadLabel="Testimonials" SubHeadLabel="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services" SubWidth="473px"/>
+      <HeadingAndSubHeading HeadLabel="Testimonials" SubHeadLabel={<p className='w-[473px]'>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p>}/>
       <div className="w-full h-[625px] rounded-[45px] flex items-center bg-dark text-white">
         <div className="w-full flex flex-col gap-[124px]">
           <div className="overflow-hidden" ref={emblaRef}>

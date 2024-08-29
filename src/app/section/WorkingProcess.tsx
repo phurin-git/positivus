@@ -4,7 +4,7 @@ import WorkingProcessCard from "../components/WorkingProcessCard"
 export default function WorkingProcess() {
     return (
         <div className="pt-[70px] mt-[70px]">
-            <HeadingAndSubHeading HeadLabel="Our Working Process" SubHeadLabel="Step-by-Step Guide to Achieving Your Business Goals" SubWidth="292px"/>
+            <HeadingAndSubHeading HeadLabel="Our Working Process" SubHeadLabel={<p className="292px">Step-by-Step Guide to Achieving Your Business Goals</p>}/>
             {/*Process block*/}
             <div className="w-full flex flex-col gap-[30px]">
                 <WorkingProcessCard orderNo={1} label="Consultation" textContent="During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."/>

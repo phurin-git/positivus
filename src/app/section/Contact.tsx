@@ -5,7 +5,7 @@ import link from "../info/link"
 export default function Contact() {
     return (
         <div id={link.contactus.substring(1)} className="pt-[70px] mt-[70px]">
-            <HeadingAndSubHeading HeadLabel="Contact Us" SubHeadLabel="Connect with Us: Let's Discuss Your Digital Marketing Needs" SubWidth="323px"/>
+            <HeadingAndSubHeading HeadLabel="Contact Us" SubHeadLabel={<p className="w-[323px]">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>}/>
             <div className="w-full rounded-[45px] flex gap-[10px] px-[100px] pt-[60px] pb-[80px] bg-grey overflow-hidden">
                 <form className="flex flex-col gap-10">
                     <div className="flex gap-[35px]">
