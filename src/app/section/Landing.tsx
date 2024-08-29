@@ -8,7 +8,7 @@ export default function Landing() {
     return (
         <div>
             {/*Hero*/}
-            <div className="w-full flex flex-col gap-[70px] pt-[60px]">
+            <div className="w-full flex flex-col gap-[70px] mt-[60px]">
                 {/*Nav*/}
                 <div className="w-full flex justify-between items-center">
                 <Logo />

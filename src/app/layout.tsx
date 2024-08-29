@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${space_grotesk.className || ''} w-  leading-normal tracking-normal antialiased px-[100px] overscroll-none`}>{children}</body>
+      <body className={`${space_grotesk.className || ''} min-w-[1024px] max-w-screen-2xl  leading-normal tracking-normal antialiased px-[100px] overscroll-none`}>{children}</body>
     </html>
   );
 }

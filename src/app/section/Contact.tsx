@@ -11,7 +11,7 @@ export default function Contact() {
                     <div className="flex gap-[35px]">
                         <div className="flex items-center gap-[14px]">
                             <input id="say-hi-radio-checkbox" type="radio" name="contact-us"
-                            className="w-7 h-7 appearance-none rounded-full border border-black ring-inset ring-[6px] ring-white bg-white checked:bg-green"/>
+                            className="w-7 h-7 appearance-none rounded-full border border-black ring-inset ring-[6px] ring-white bg-white checked:bg-green" defaultChecked/>
                             <label htmlFor="say-hi-radio-checkbox"><p>Say Hi</p></label>
                         </div>
                         <div className="flex items-center gap-[14px]">
