@@ -6,7 +6,7 @@ import link from "../info/link"
 export default function Team() {
     return (
         <div id={link.team.substring(1)} className="pt-[70px] mt-[70px]">
-            <HeadingAndSubHeading HeadLabel="Team" SubHeadLabel={<p className="w-[473px]">Meet the skilled and experienced team behind our successful digital marketing strategies</p>}/>
+            <HeadingAndSubHeading headLabel="Team" subHeadLabel="Meet the skilled and experienced team behind our successful digital marketing strategies" subHeadWidth={473}/>
             <div className="grid grid-cols-3 gap-10">
                 <TeamCard src="/team_profile_image/John_Smith.svg" name="John Smith" position="CEO and Founder" description="10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy"/>
                 <TeamCard src="/team_profile_image/Jane_Doe.svg" name="Jane Doe" position="Director of Operations" description="7+ years of experience in project management and team leadership. Strong organizational and communication skills"/>
