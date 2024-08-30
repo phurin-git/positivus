@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import Button from "../components/Button";
-import Logo from "../components/Logo";
+import Button from "../ui/Button";
+import Logo from "../ui/Logo";
 import link from "../info/link";
 
 export default function Landing() {
@@ -28,27 +28,27 @@ export default function Landing() {
                     <span className="w-[498px] font-normal text-xl">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</span>
                     <Button property="primary" href={link.aboutus} label="Book a consultation"/>
                 </div>
-                <Image src="/hero.svg" width={600.46} height={515} alt="Hero" className="w-auto h-auto"/>
+                <Image src="/hero.svg" width={1} height={1} alt="Hero" className="w-auto h-auto" priority/>
                 </div>
                 {/*Company Logo*/}
                 <div className="w-full flex justify-between">
                     <Link href="https://www.amazon.com/">
-                        <Image src="/company_logo/amazon.svg" width={124.11} height={48} alt="Amazon" className="w-auto h-auto grayscale hover:grayscale-0"/>
+                        <Image src="/company_logo/amazon.svg" width={1} height={1} alt="Amazon" className="w-auto h-auto grayscale hover:grayscale-0" priority/>
                     </Link>
                     <Link href="https://dribbble.com/">
-                        <Image src="/company_logo/dribble.svg" width={126.37} height={48} alt="Dribble" className="w-auto h-auto grayscale hover:grayscale-0"/>
+                        <Image src="/company_logo/dribble.svg" width={1} height={1} alt="Dribble" className="w-auto h-auto grayscale hover:grayscale-0" priority/>
                     </Link>
                     <Link href="https://www.hubspot.com/">
-                        <Image src="/company_logo/hubspot.svg" width={128.63} height={48} alt="Hubspot" className="w-auto h-auto grayscale hover:grayscale-0"/>
+                        <Image src="/company_logo/hubspot.svg" width={1} height={1} alt="Hubspot" className="w-auto h-auto grayscale hover:grayscale-0" priority/>
                     </Link>
                     <Link href="https://www.notion.so/">
-                        <Image src="/company_logo/notion.svg" width={145.55} height={48} alt="Notion" className="w-auto h-auto grayscale hover:grayscale-0"/>
+                        <Image src="/company_logo/notion.svg" width={1} height={1} alt="Notion" className="w-auto h-auto grayscale hover:grayscale-0" priority/>
                     </Link>
                     <Link href="https://www.netflix.com/">
-                        <Image src="/company_logo/netflix.svg" width={125.24} height={48} alt="Netflix" className="w-auto h-auto grayscale hover:grayscale-0"/>
+                        <Image src="/company_logo/netflix.svg" width={1} height={1} alt="Netflix" className="w-auto h-auto grayscale hover:grayscale-0" priority/>
                     </Link>
                     <Link href="https://zoom.us/">
-                        <Image src="/company_logo/zoom.svg" width={110.57} height={48} alt="Zoom" className="w-auto h-auto grayscale hover:grayscale-0"/>
+                        <Image src="/company_logo/zoom.svg" width={1} height={1} alt="Zoom" className="w-auto h-auto grayscale hover:grayscale-0" priority/>
                     </Link>
                 </div>
             </div>

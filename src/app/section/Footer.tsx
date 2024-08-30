@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../components/Logo";
+import Logo from "../ui/Logo";
 import link from "../info/link";
 
 export default function Footer() {
@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="w-full rounded-t-[45px] flex flex-col gap-[50px] px-[60px] pt-[55px] pb-[50px] mt-[140px] bg-dark text-white">
                 <div className="flex flex-col gap-[66px]">
                     <div className="w-full flex justify-between items-center">
-                        <Logo property="white" width={180} height={29}/>
+                        <div className="w-[180px]"><Logo property="white"/></div>
                         <div className="flex gap-10">
                             <Link href={link.aboutus} className="font-normal text-lg underline">About us</Link>
                             <Link href={link.services} className="font-normal text-lg underline">Services</Link>
@@ -18,9 +18,9 @@ export default function Footer() {
                             <Link href={link.blog} className="font-normal text-lg underline">Blog</Link>
                         </div>
                         <div className="flex gap-5">
-                            <Link href="https://linkedin.com/"><Image src="/social_icon/linkedin.svg" alt="" width={30} height={30} className="w-auto h-auto"/></Link>
-                            <Link href="https://facebook.com/"><Image src="/social_icon/facebook.svg" alt="" width={30} height={30} className="w-auto h-auto"/></Link>
-                            <Link href="https://twitter.com/"><Image src="/social_icon/twitter.svg" alt="" width={30} height={30} className="w-auto h-auto"/></Link>
+                            <Link href="https://linkedin.com/"><Image src="/social_icon/linkedin.svg" alt="" width={1} height={1} className="w-auto h-auto"/></Link>
+                            <Link href="https://facebook.com/"><Image src="/social_icon/facebook.svg" alt="" width={1} height={1} className="w-auto h-auto"/></Link>
+                            <Link href="https://twitter.com/"><Image src="/social_icon/twitter.svg" alt="" width={1} height={1} className="w-auto h-auto"/></Link>
                         </div>
                     </div>
                     <div className="w-full flex justify-between">

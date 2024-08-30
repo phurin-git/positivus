@@ -1,12 +1,12 @@
 import Image from "next/image"
-import HeadingAndSubHeading from "../components/HeadingAndSubHeading"
+import HeadingAndSubHeading from "../ui/HeadingAndSubHeading"
 import link from "../info/link"
 
 export default function Contact() {
     return (
         <div id={link.contactus.substring(1)} className="pt-[70px] mt-[70px]">
             <HeadingAndSubHeading headLabel="Contact Us" subHeadLabel="Connect with Us: Let's Discuss Your Digital Marketing Needs" subHeadWidth={323}/>
-            <div className="w-full rounded-[45px] flex gap-[10px] px-[100px] pt-[60px] pb-[80px] bg-grey overflow-hidden">
+            <div className="w-full rounded-[45px] flex justify-between pl-[100px] pt-[60px] pb-[80px] bg-grey overflow-hidden">
                 <form className="flex flex-col gap-10">
                     <div className="flex gap-[35px]">
                         <div className="flex items-center gap-[14px]">
@@ -38,7 +38,7 @@ export default function Contact() {
                     </div>
                     <button className="w-[556px] rounded-[14px] bg-dark text-white px-[35px] py-[20px]">Send Message</button>
                 </form>
-                <Image src="/contact.svg" alt="" width={691.57} height={648} className="w-auto h-auto translate-x-[280px]"></Image>
+                <Image src="/contact.svg" alt="" width={1} height={1} className="w-auto h-auto -mr-[325px]"></Image>
             </div>
         </div>
     )

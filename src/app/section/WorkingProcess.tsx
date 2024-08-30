@@ -1,5 +1,5 @@
-import HeadingAndSubHeading from "../components/HeadingAndSubHeading"
-import WorkingProcessCard from "../components/WorkingProcessCard"
+import HeadingAndSubHeading from "../ui/HeadingAndSubHeading"
+import WorkingProcessCard from "../ui/WorkingProcess/Card"
 
 export default function WorkingProcess() {
     return (

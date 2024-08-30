@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Button from "../components/Button"
+import Button from "../ui/Button"
 import link from "../info/link"
 
 export default function CTA() {
@@ -12,7 +12,7 @@ export default function CTA() {
                 <p className="w-[500px]">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
                 <Button property="primary" href={link.contactus} label="Get your free proposal"/>
                     </div>
-                <Image src="/cta.svg" width={359} height={394.27} alt="CTA" className="w-auto h-auto pr-[135px]"/>
+                <Image src="/cta.svg" width={1} height={1} alt="CTA" className="w-auto h-auto pr-[135px]"/>
             </div>
         </>
     )

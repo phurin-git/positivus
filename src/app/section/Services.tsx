@@ -1,5 +1,5 @@
-import HeadingAndSubHeading from "../components/HeadingAndSubHeading"
-import ServiceCard from "../components/ServiceCard"
+import HeadingAndSubHeading from "../ui/HeadingAndSubHeading"
+import ServiceCard from "../ui/Services/Card"
 import link from "../info/link"
 
 export default function Services() {

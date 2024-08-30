@@ -7,6 +7,6 @@ export default function PlusIcon({property}:{property:string}) {
             "/plus_icon/plus.svg": property === "plus",
             "/plus_icon/minus.svg": property === "minus",
         }
-        )} width={58} height={58} alt="plus icon" />
+        )} width={58} height={58} alt="plus icon"/>
     )
 }

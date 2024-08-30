@@ -7,7 +7,7 @@ export default function TeamCard({src, name, position, description}: {src: strin
             <div className="w-full flex flex-col gap-7">
                 <div className="w-full flex">
                     <div className="w-full flex gap-5 items-end -mr-[34px]">
-                        <Image src={src} alt="" width={105.65} height={102.82} className="w-auto h-auto"/>
+                        <Image src={src} alt="" width={1} height={1} className="w-auto h-auto"/>
                         <div>
                             <h4>{name}</h4>
                             <p>{position}</p>

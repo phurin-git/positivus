@@ -1,5 +1,5 @@
-import HeadingAndSubHeading from "../components/HeadingAndSubHeading"
-import LinkButton from "../components/LinkButton"
+import HeadingAndSubHeading from "../ui/HeadingAndSubHeading"
+import LinkButton from "../ui/LinkButton"
 import link from "../info/link"
 
 export default function CaseStudies() {
@@ -7,7 +7,7 @@ export default function CaseStudies() {
         <div id={link.usecases.substring(1)} className="pt-[70px] mt-[70px]">
             <HeadingAndSubHeading headLabel="Case Studies" subHeadLabel="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies" subHeadWidth={580}/>
             {/*Case Study block*/}
-            <div className="w-full rounded-[45px] flex gap-16 px-[60px] py-[70px] bg-dark">
+            <div className="w-full rounded-[45px] flex justify-between px-[60px] py-[70px] bg-dark">
                 <div className="flex flex-col gap-5">
                     <p className="w-[286px] text-white">For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
                     <LinkButton property="simple green" href={link.usecases} label="Learn more"/>

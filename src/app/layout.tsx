@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import { m } from "framer-motion";
 
 const space_grotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://figma-positivus-landing-page.vercel.app/"),
   icons: [
     {
       rel: "icon",
@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${space_grotesk.className || ''} sm:w-fit lg:w-full max-w-screen-2xl  leading-normal tracking-normal antialiased px-[20px] sm:px-[100px] overscroll-none`}>{children}</body>
+      <body className={`${space_grotesk.className || ''} sm:min-w-[1280px] lg:w-full max-w-screen-2xl  leading-normal tracking-normal antialiased px-[20px] sm:px-[100px] overscroll-none`}>{children}</body>
     </html>
   );
 }

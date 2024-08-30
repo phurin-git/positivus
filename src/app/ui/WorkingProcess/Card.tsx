@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import PlusIcon from "./PlusIcon";
+import PlusIcon from "../PlusIcon";
 
 export default function WorkingProcessCard({ orderNo, label, textContent = "" }: { orderNo: number; label: string; textContent?: string }) {
     const [state, setState] = useState<boolean>(false);

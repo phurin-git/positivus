@@ -1,6 +1,6 @@
-import Button from "../components/Button"
-import HeadingAndSubHeading from "../components/HeadingAndSubHeading"
-import TeamCard from "../components/TeamCard"
+import Button from "../ui/Button"
+import HeadingAndSubHeading from "../ui/HeadingAndSubHeading"
+import TeamCard from "../ui/Team/Card"
 import link from "../info/link"
 
 export default function Team() {

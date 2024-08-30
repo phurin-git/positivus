@@ -1,6 +1,6 @@
 import Image from "next/image"
 import clsx from "clsx"
-import LinkButton from "./LinkButton"
+import LinkButton from "../LinkButton"
 
 export default function Card({property, label, href="/", image}:{property: {card:string,label:string}, label: string, href?:string , image: string}) {
     const splitLabel = label.split(" ")
@@ -15,7 +15,7 @@ export default function Card({property, label, href="/", image}:{property: {card
     )
     return (
         <div className={clsx(
-            "w-full h-fit rounded-[45px] flex justify-between items-center p-[50px] border border-dark drop-shadow-[0px_5px]",
+            "w-full h-full rounded-[45px] flex justify-between items-center p-[50px] border border-dark drop-shadow-[0px_5px]",
             {
                 "bg-grey": property.card === "grey",
                 "bg-green": property.card === "green",
@@ -29,7 +29,7 @@ export default function Card({property, label, href="/", image}:{property: {card
                 </div>
                 <LinkButton property={ property.card === "dark" ? "white2" : "black" } href={href} label="Learn more"/>
             </div>
-            <Image src={image} width={210} height={170} alt="Card" className="w-auto h-auto"/>
+            <Image src={image} width={1} height={1} alt="Card" className="w-auto h-auto"/>
         </div>
     )
 }
