@@ -3,10 +3,10 @@ import WorkingProcessCard from "../ui/WorkingProcess/Card"
 
 export default function WorkingProcess() {
     return (
-        <div className="pt-[70px] mt-[70px]">
+        <div className="pt-[30px] sm:pt-[70px] mt-[30px] sm:mt-[70px]">
             <HeadingAndSubHeading headLabel="Our Working Process" subHeadLabel="Step-by-Step Guide to Achieving Your Business Goals" subHeadWidth={292}/>
             {/*Process block*/}
-            <div className="w-full flex flex-col gap-[30px]">
+            <div className="w-full flex flex-col gap-[20px] sm:gap-[30px]">
                 <WorkingProcessCard orderNo={1} label="Consultation" textContent="During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."/>
                 <WorkingProcessCard orderNo={2} label="Research and Strategy Development" textContent="Based on the information gathered during the consultation, we will develop a comprehensive digital marketing strategy that outlines the tactics and channels we will use to achieve your goals. This strategy will be customized to your business and target audience."/>
                 <WorkingProcessCard orderNo={3} label="Implementation" textContent="Once the strategy is approved, we will begin implementing the tactics outlined in the plan. This may include website development, content creation, social media management, and other digital marketing services."/>

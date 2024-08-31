@@ -22,14 +22,17 @@ export default function Card({property, label, href="/", image}:{property: {card
                 "bg-dark": property.card === "dark",
             }
         )}>
-            <div className="w-fit h-fit flex flex-col gap-[93px] justify-center items-start">
+            <div className="w-full flex flex-col gap-[27px] sm:gap-[93px] justify-center items-start">
                 <div>
                     <h3 className={labelClassName}>{firstLineLabel}</h3>
                     <h3 className={labelClassName}>{secondLineLabel}</h3>
                 </div>
-                <LinkButton property={ property.card === "dark" ? "white2" : "black" } href={href} label="Learn more"/>
+                <div className="w-full flex justify-between items-end">
+                    <LinkButton property={ property.card === "dark" ? "white2" : "black" } href={href} label="Learn more"/>
+                    <Image src={image} width={1} height={1} alt="Card" className="sm:hidden w-[165px] h-auto"/>
+                </div>
             </div>
-            <Image src={image} width={1} height={1} alt="Card" className="w-auto h-auto"/>
+            <Image src={image} width={1} height={1} alt="Card" className="max-sm:hidden w-auto h-auto"/>
         </div>
     )
 }

@@ -5,9 +5,9 @@ import link from "../info/link"
 
 export default function Team() {
     return (
-        <div id={link.team.substring(1)} className="pt-[70px] mt-[70px]">
+        <div id={link.team.substring(1)} className="pt-[30px] sm:pt-[70px] mt-[30px] sm:mt-[70px]">
             <HeadingAndSubHeading headLabel="Team" subHeadLabel="Meet the skilled and experienced team behind our successful digital marketing strategies" subHeadWidth={473}/>
-            <div className="grid grid-cols-3 gap-10">
+            <div className="grid sm:grid-cols-3 gap-[30px] sm:gap-10">
                 <TeamCard src="/team_profile_image/John_Smith.svg" name="John Smith" position="CEO and Founder" description="10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy"/>
                 <TeamCard src="/team_profile_image/Jane_Doe.svg" name="Jane Doe" position="Director of Operations" description="7+ years of experience in project management and team leadership. Strong organizational and communication skills"/>
                 <TeamCard src="/team_profile_image/Michael_Brown.svg" name="Michael Brown" position="Senior SEO Specialist" description="5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization"/>

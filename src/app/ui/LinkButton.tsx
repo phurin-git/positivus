@@ -15,7 +15,8 @@ export default function LinkButton({property, href, label}:{property: string, hr
             }
         )}>
             <Image src={`/link_button_icon/${property.replace(" ", "_")}.svg`} width={property.split(" ").includes("simple") ? 17.32 : 41} height={property.split(" ").includes("simple") ? 10 : 41} alt="" />
-            <span>{label}</span>
+            {property == "simple green" && <span className="sm:hidden">{label}</span>}
+            <span className="max-sm:hidden">{label}</span>
         </Link>
     )
 }

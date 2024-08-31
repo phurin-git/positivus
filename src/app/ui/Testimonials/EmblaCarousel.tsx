@@ -23,10 +23,10 @@ const EmblaCarousel: React.FC = () => {
   } = usePrevNextButtons(emblaApi)
 
   return (
-    <section className="pt-[70px] mt-[70px]">
+    <section className="pt-[30px] sm:pt-[70px] mt-[30px] sm:mt-[70px]">
       <HeadingAndSubHeading headLabel="Testimonials" subHeadLabel="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services" subHeadWidth={473}/>
-      <div className="w-full h-[625px] rounded-[45px] flex items-center bg-dark text-white">
-        <div className="w-full flex flex-col gap-[124px]">
+      <div className="w-full sm:h-[625px] rounded-[45px] flex items-center max-sm:p-[30px] max-sm:pb-[60px] bg-dark text-white">
+        <div className="w-full flex flex-col gap-[60px] sm:gap-[124px]">
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex touch-pan-y touch-pinch-zoom -ml-[50px]">
               {Array.from({ length: 5 }).map((_, index) => (
@@ -34,7 +34,7 @@ const EmblaCarousel: React.FC = () => {
               ))}
             </div>
           </div>
-          <div className="w-[564px] flex self-center justify-between items-center">
+          <div className="w-full sm:w-[564px] flex self-center justify-between items-center">
             <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
               
             <div className="w-[146px] flex gap-[19px]">

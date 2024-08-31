@@ -9,16 +9,18 @@ export default function WorkingProcessCard({ orderNo, label, textContent = "" }:
 
     return (
         <motion.div
-            className={`w-full rounded-[45px] flex flex-col px-[60px] py-[41px] border border-dark drop-shadow-[0px_5px] ${state ? "bg-green" : "bg-grey"} transition-colors duration-300`}
+            className={`w-full rounded-[45px] flex flex-col px-[30px] sm:px-[60px] py-[30px] sm:py-[41px] border border-dark drop-shadow-[0px_5px] ${state ? "bg-green" : "bg-grey"} transition-colors duration-300`}
             animate={{ height: 'auto' }}
             transition={{ duration: 0.3}}
         >
-            <div className="w-full flex justify-between items-center">
-                <div className="flex gap-[25px] items-center">
-                    <h1>{orderNo < 10 ? `0${orderNo}` : orderNo}</h1>
-                    <h3 className="w-[612px]">{label}</h3>
+            <div className="w-full flex max-sm:gap-[28px] justify-between items-center">
+                <div className="flex gap-[33px] sm:gap-[25px] items-center">
+                    <h1 className="font-medium max-sm:text-[30px]">{orderNo < 10 ? `0${orderNo}` : orderNo}</h1>
+                    <h3 className="max-sm:hidden w-[612px]">{label}</h3>
+                    <h4 className="sm:hidden">{label}</h4>
+                    
                 </div>
-                <button onClick={() => setState(!state)}><PlusIcon property={state ? "minus" : "plus"} /></button>
+                <button className="max-sm:w-[30px] max-sm:h-[30px]" onClick={() => setState(!state)}><PlusIcon property={state ? "minus" : "plus"} /></button>
             </div>
 
             {/* AnimatePresence only around elements that will be added/removed */}
@@ -32,16 +34,15 @@ export default function WorkingProcessCard({ orderNo, label, textContent = "" }:
                     transition={{ duration: 0.3 }}
                     >
                         <motion.span
-                            className="w-[1114px] bg-black"
+                            className="bg-black"
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: '1px' }}
                             exit={{ opacity: 0, height: 0 }}
                             transition={{ duration: 0.3 }}
                         ></motion.span>
                         <motion.p
-                            className="w-[1114px]"
                             initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: '60px' }}
+                            animate={{ opacity: 1, height: 'auto' }}
                             exit={{ opacity: 0, height: 0 }}
                             transition={{ duration: 0.3 }}
                         >

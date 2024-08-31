@@ -17,7 +17,7 @@ export default function TeamCard({src, name, position, description}: {src: strin
                         <Image src="/social_icon/linkedin-green.svg" alt="" width={34} height={34} className="w-auto h-auto"/>
                     </Link>
                 </div>
-                <span className="w-full h-px block bg-black"></span>
+                <span className="h-px block bg-black"></span>
                 <p className="w-full">{description}</p>
             </div>
         </div>
