@@ -45,7 +45,7 @@ export default function Footer() {
                     </div>
                     <div className="w-full flex flex-col gap-[50px]">
                         <span className="w-full h-px block bg-white"></span>
-                        <div className="flex flex-col sm:flex-row gap-[15px] sm:gap-10 items-center">
+                        <div className="flex flex-col sm:flex-row gap-[15px] sm:gap-10 items-center text-center">
                             <span className="text-lg">© 2023 Positivus. All Rights Reserved.</span>
                             <Link id="privacy-policy" href="/#privacy-policy" className="text-lg sm:underline">Privacy Policy</Link>
                         </div>

@@ -7,7 +7,7 @@ export default function CaseStudies() {
         <div id={link.usecases.substring(1)} className="pt-[30px] sm:pt-[70px] mt-[30px] sm:mt-[70px]">
             <HeadingAndSubHeading headLabel="Case Studies" subHeadLabel="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies" subHeadWidth={580}/>
             {/*Case Study block*/}
-            <div className="sm:w-full sm:rounded-[45px] flex max-sm:gap-[20px] sm:justify-between sm:px-[60px] sm:py-[70px] max-sm:-mx-5 sm:bg-dark overflow-x-hidden">
+            <div className="sm:w-full sm:rounded-[45px] flex max-sm:gap-[20px] sm:justify-between sm:px-[60px] sm:py-[70px] max-sm:-mx-5 sm:bg-dark overflow-x-hidden touch-pan-y touch-pinch-zoom">
                 <div className="rounded-[45px] flex flex-col gap-5 max-sm:px-[50px] max-sm:py-[42px] bg-dark">
                     <p className="w-[250px] sm:w-[286px] text-white">For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
                     <LinkButton property="simple green" href={link.usecases} label="Learn more"/>
