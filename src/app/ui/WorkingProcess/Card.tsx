@@ -14,13 +14,13 @@ export default function WorkingProcessCard({ orderNo, label, textContent = "" }:
             transition={{ duration: 0.3}}
         >
             <div className="w-full flex max-sm:gap-[28px] justify-between items-center">
-                <div className="flex gap-[33px] sm:gap-[25px] items-center">
+                <div className="w-full flex gap-[33px] sm:gap-[25px] items-center">
                     <h1 className="font-medium max-sm:text-[30px]">{orderNo < 10 ? `0${orderNo}` : orderNo}</h1>
                     <h3 className="max-sm:hidden w-[612px]">{label}</h3>
                     <h4 className="sm:hidden">{label}</h4>
-                    
                 </div>
-                <button className="max-sm:w-[30px] max-sm:h-[30px]" onClick={() => setState(!state)}><PlusIcon property={state ? "minus" : "plus"} /></button>
+                <button className="max-sm:w-[30px] sm:w-[58px] h-full" onClick={() => setState(!state)}><PlusIcon property={state ? "minus" : "plus"} /></button>
+                
             </div>
 
             {/* AnimatePresence only around elements that will be added/removed */}

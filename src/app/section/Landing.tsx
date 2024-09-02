@@ -37,7 +37,7 @@ export default function Landing() {
                 <Image src="/hero.svg" width={601} height={515} alt="" className="hidden sm:block w-auto h-auto" priority/>
                 </div>
                 {/*Company Logo*/}
-                <div className="w-full flex flex-col sm:flex-row sm:gap-24">
+                <div className="flex flex-col sm:flex-row sm:gap-24 max-sm:-mx-5 overflow-hidden">
                     <div className="flex gap-9 sm:gap-24 max-sm:-mr-[80px]">
                         <Link href="https://www.amazon.com/">
                             <Image src="/company_logo/amazon.svg" width={125} height={48} alt="Amazon" className="w-auto h-auto grayscale hover:grayscale-0" priority/>
