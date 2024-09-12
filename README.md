@@ -1,3 +1,9 @@
+## Design Credits
+
+The design for this project was created using [Figma](https://www.figma.com/community/file/1230604708032389430/positivus-landing-page-design).
+
+Special thanks to [Olga](https://www.figma.com/@olgaaverchenko) for the design inspiration.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
